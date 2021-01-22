@@ -1,0 +1,71 @@
+{
+  "compilerOptions": {
+    "jsx": "react",
+    "allowSyntheticDefaultImports": true,
+    "target": "es6",
+    "baseUrl": "./",
+    "paths": {
+      "src": [
+        "./src"
+      ],
+      "src/*": [
+        "./src/*"
+      ],
+      "data": [
+        "./src/data"
+      ],
+      "data/*": [
+        "./src/data/*"
+      ],
+      "assets": [
+        "./src/assets"
+      ],
+      "assets/*": [
+        "./src/assets/*"
+      ],
+      "images": [
+        "./src/assets/images"
+      ],
+      "images/*": [
+        "./src/assets/images/*"
+      ],
+      "styles": [
+        "./src/assets/styles"
+      ],
+      "styles/*": [
+        "./src/assets/styles/*"
+      ],
+      "components": [
+        "./src/components"
+      ],
+      "components/*": [
+        "./src/components/*"
+      ],
+      "types": [
+        "./src/types"
+      ],
+      "types/*": [
+        "./src/types/*"
+      ],
+      "utils": [
+        "./src/utils"
+      ],
+      "utils/*": [
+        "./src/utils/*"
+      ],
+      "pages": [
+        "./src/pages"
+      ],
+      "pages/*": [
+        "./src/pages/*"
+      ],
+      "constants/*": [
+        "./src/constants/*"
+      ]
+    }
+  },
+  "exclude": [
+    "node_modules"
+  ],
+  "checkJs": "true"
+}

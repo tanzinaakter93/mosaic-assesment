@@ -1,0 +1,92 @@
+@import "./colorScheme.scss";
+
+$primary: map-get(
+  $map: $colorScheme,
+  $key: "primary",
+);
+$secondary: map-get(
+  $map: $colorScheme,
+  $key: "secondary",
+);
+$success: map-get(
+  $map: $colorScheme,
+  $key: "success",
+);
+$warning: map-get(
+  $map: $colorScheme,
+  $key: "warning",
+);
+$info: map-get(
+  $map: $colorScheme,
+  $key: "info",
+);
+$light: map-get(
+  $map: $colorScheme,
+  $key: "light",
+);
+$dark: map-get(
+  $map: $colorScheme,
+  $key: "dark",
+);
+//These three colors match original bootstrap colors $muted $danger $white
+
+@import "./bootstrap-plus/index.scss";
+@import "./shadows.scss";
+@import "./flexboxClasses.scss";
+@import "./fonts.scss";
+@import "./borders.scss";
+@import "./grayClasses.scss";
+@import "./select.scss";
+
+html,
+body,
+#root {
+  font-family: $default-font;
+  scroll-behavior: smooth;
+  width: 100%;
+}
+
+.p,
+.strong,
+.span {
+  color: map-get($map: $colorScheme, $key: "dark");
+}
+
+.wh-100 {
+  width: 100%;
+  height: 100%;
+}
+
+.center-vertically {
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.invisible {
+  display: none;
+}
+
+.bold-primary-title {
+  @extend .font-title;
+  @extend .text-primary;
+  @extend .font-weight-bold;
+}
+
+//TODO: Change default for page scrollbar
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 10px;
+  padding: 2px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
+  -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
+}

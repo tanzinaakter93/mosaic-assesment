@@ -1,0 +1,17 @@
+@import './colorScheme.scss';
+
+.border-gray1{
+    border-color: map-get($map: $gray, $key: 3) !important;
+}
+
+.border-gray2{
+    border-color: map-get($map: $gray, $key: 3) !important;
+}
+
+.border-gray3{
+    border-color: map-get($map: $gray, $key: 3) !important;
+}
+
+.border-gray4{
+    border-color: map-get($map: $gray, $key: 4) !important;
+}

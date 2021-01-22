@@ -1,0 +1,13 @@
+{
+  "client": {
+    "blog": "/blog",
+    "home": "/",
+    "heart": "#",
+    "phone": "#",
+    "contact": "#"
+  },
+  "server": {
+
+  },
+  "external": {}
+}

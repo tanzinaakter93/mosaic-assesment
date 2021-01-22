@@ -1,0 +1,12 @@
+
+.panel-title > button:before {
+    font-family: FontAwesome;
+    content:"+";
+    font-size:18px;
+    font-weight:bold;
+}
+.panel-title > button.collapsed:before {
+    content:"-";
+    font-size:18px;
+    font-weight:bold;
+}
